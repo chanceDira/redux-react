@@ -9,6 +9,8 @@
     text-align: center;
     cursor: pointer;
     display: inline-block;
+    background-color: rgb(30, 110, 70);
+
 }
 
 .CounterControl:hover,
