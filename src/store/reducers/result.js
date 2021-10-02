@@ -7,9 +7,10 @@ const initialState = {
 const reducer = (state = initialState, action) => { //reducer runs synchronously
     switch (action.type) {
         case actionTypes.STORE_RESULT:
+            // You change data here in reducer, if you want
             return {
                 ...state,
-                results: state.results.concat({id: new Date(), value: action.result})  // value: state.counter //immutable way of adding adding item somehow similar to push
+                results: state.results.concat({id: new Date(), value: action.result * 2})  // value: state.counter //immutable way of adding adding item somehow similar to push
             }
         case actionTypes.DELETE_RESULT:
             // const id = 2
